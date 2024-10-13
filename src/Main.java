@@ -6,7 +6,7 @@ public class Main {
 
 //        AteNumero(5);
 //        AteNumeroZero(5);
-        ContadorRecursivo(4);
+
     }
     static void AteNumero(int numero) {
 
