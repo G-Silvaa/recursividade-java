@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
 //        AteNumero(5);
-//        AteNumeroZero(5);
+       AteNumeroZero(5);
+//        contadorRecursivo(1,4);
 
     }
     static void AteNumero(int numero) {
@@ -31,14 +32,13 @@ public class Main {
         }
     }
 
-    static void ContadorRecursivo(int numero) {
-       
-        if (numero == 1) {
-            System.out.println(numero);
-        } else {
-            System.out.println(numero );
-            ContadorRecursivo(numero - 1);
-            System.out.println(numero);
+    static void contadorRecursivo(int n, int numero){
+        if (n <= numero) {
+            System.out.println(n);
+            contadorRecursivo(n + 1, numero);
+        }
+        if (n < numero){
+            System.out.println(n);
         }
     }
 }
